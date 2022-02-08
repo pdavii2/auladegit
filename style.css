@@ -46,5 +46,6 @@ h1 {
         color: black;
         box-shadow: 10px 10px 10px black;
         padding: 100px;
+        background: linear-gradient(#000, #FFF);
     }
   }
