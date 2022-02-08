@@ -5,10 +5,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: rotatein 2s linear infinite;
 }
 
 h1 {
-    background: linear-gradient(#F00, #00F);
+    background: linear-gradient(#F00, #000);
     color: white;
     padding: 10px;
     animation: slidein 2s linear infinite;
@@ -18,9 +19,21 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 @keyframes slidein {
+    0% {
+      transform: rotate(0);
+    }
+  
+    100% {
+        transform: rotate(45deg);
+        background: linear-gradient(#000, #F00, #FFF);
+    }
+  }
+
+  @keyframes rotatein {
     0% {
       transform: scale(1);
       border-radius: 0;
@@ -31,6 +44,7 @@ h1 {
         transform: scale(1.5);
         border-radius: 50%;
         color: black;
-        box-shadow: 3px 5px 10px black;
+        box-shadow: 10px 10px 10px black;
+        padding: 100px;
     }
   }
