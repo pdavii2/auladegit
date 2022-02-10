@@ -24,29 +24,29 @@ h1 {
 }
 
 @keyframes slidein {
-    0% {
-      transform: rotate(0);
-    }
-  
-    100% {
-        transform: rotate(45deg);
-        background: linear-gradient(#000, #F00, #FFF);
-    }
+  0% {
+    transform: scale(1);
   }
+      
+  100% {
+    transform: scale(.5);
+    background: linear-gradient(#000, #F00, #FFF);
+  }
+}
 
-  @keyframes rotatein {
-    0% {
-      transform: scale(1);
-      border-radius: 0;
-      color: white;
-    }
-  
-    100% {
-        transform: scale(1.5);
-        border-radius: 50%;
-        color: black;
-        box-shadow: 10px 10px 10px black;
-        padding: 100px;
-        background: linear-gradient(#000, #FFF);
-    }
+@keyframes rotatein {
+  0% {
+    transform: scale(1);
+    border-radius: 0;
+    color: white;
   }
+  
+  100% {
+    transform: scale(1.5);
+    border-radius: 50%;
+    color: black;
+    box-shadow: 10px 10px 10px black;
+    padding: 100px;
+    background: linear-gradient(#000, #FFF);
+  }
+}
